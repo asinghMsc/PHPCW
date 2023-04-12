@@ -1,0 +1,73 @@
+
+/* CSS styling for the form and table */
+
+h1 {
+text-align: center;
+font-family: Arial, sans-serif;
+}
+form {
+max-width: 500px;
+margin: 0 auto;
+font-family: Arial, sans-serif;
+}
+
+form label {
+display: block;
+margin-bottom: 10px;
+font-weight: bold;
+}
+
+form input[type="number"],
+form input[type="text"],
+form select {
+padding: 10px;
+font-size: 16px;
+border-radius: 5px;
+border: 1px solid black;
+margin-bottom: 20px;
+width: 100%;
+box-sizing: border-box;
+}
+
+form input[type="button"] {
+padding: 10px 20px;
+font-size: 16px;
+background-color: #2f4a30;
+color: white;
+border-radius: 5px;
+border: none;
+cursor: pointer;
+margin-right: 10px;
+}
+
+form input[type="button"]:hover {
+background-color: black;
+}
+
+/* Table styles */
+table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 30px;
+}
+
+th, td {
+padding: 12px 15px;
+text-align: left;
+border-bottom: 1px solid #ddd;
+}
+
+th {
+background-color: black;
+color: white;
+}
+
+/* Output div styles */
+#output {
+margin-top: 20px;
+font-family: Arial, sans-serif;
+font-size: 16px;
+color: red;
+}
+
+

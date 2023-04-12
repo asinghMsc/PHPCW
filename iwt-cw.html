@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tournament Results</title>
+    <!--js and php css scripts-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="iwt-cw.css">
+    <script src="iwt-cw.js"></script>
+    <script src="iwt-cw.php"></script>
+  </head>
+  <body>
+    <h1>Tournament Results</h1>
+    <!--main form-->
+    <form>
+      <label for="year">Year:</label>
+      <input type="number" id="year" name="year" required><br><br>
+      <label for="winner">Winner:</label>
+      <input type="text" id="winner" name="winner" required><br><br>
+      <label for="runner-up">Runner-up:</label>
+      <input type="text" id="runner-up" name="runner-up" required><br><br>
+      <label for="file">File:</label>
+      <select id="file" name="file" required>
+        <option value="">--Select mens results or womens--</option>
+        <option value="mens-grand-slam-winners.json">Men's Results</option>
+        <option value="womens-grand-slam-winners.json">Women's Results</option>
+      </select><br><br>
+      <label for="year-op">Year Comparison:</label>
+      <select id="year-op" name="year-op" required>
+        <option value="=">Equals</option>
+        <option value=">">Greater Than</option>
+        <option value="<">Less Than</option>
+      </select><br><br>
+      <label for="tournament">Tournament:</label>
+      <select id="tournament" name="tournament" required>
+        <option value="Any">Any</option>
+        <option value="U.S. Open">U.S. Open</option>
+        <option value="Wimbledon">Wimbledon</option>
+        <option value="French Open">French Open</option>
+        <option value="Australian Open">Australian Open</option>
+      </select><br><br>
+      <input type="button" value="Send Query" id="send-query">
+      <input type="button" value="Clear Input" id="clear-input">
+      <input type="button" value="Clear Output" id="clear-output">
+    </form>
+    
+    <br>
+    <!--Table-->
+    <table>
+      <thead>
+        <tr>
+          <th>Year</th>
+          <th>Tournament</th>
+          <th>Winner</th>
+          <th>Runner-up</th>
+        </tr>
+      </thead>
+      <tbody id="results">
+      </tbody>
+    </table>
+  
+    <!--output div-->
+    <div id="output"></div>
+  </body>
+
+</html>
